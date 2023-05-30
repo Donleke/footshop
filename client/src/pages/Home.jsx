@@ -33,7 +33,6 @@ export default function Home() {
         setError(error);
       });
   }, []);
-  console.log("hero", hero);
 
   const heroProduct = hero.filter(
     (product) => product.title === "Black Chuck 70 Hi Sneakers"
