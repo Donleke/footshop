@@ -1,0 +1,124 @@
+@import url("https://fonts.cdnfonts.com/css/deviant-art-2000");
+@import url("https://fonts.cdnfonts.com/css/larsseit-font-family");
+* {
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+  font-family: "Deviant Art 2000", sans-serif;
+}
+
+a {
+  color: inherit !important;
+}
+
+input,
+span,
+p,
+a {
+  font-family: "Larsseit", sans-serif !important;
+}
+
+.heading {
+  font-size: clamp(1.9rem, 2.5vw, 2.6rem) !important;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.bgModal {
+  background-color: #eee7e1;
+}
+
+.hover-link:hover {
+  border-bottom: 3px solid black;
+  width: fit-content;
+  transition: 0.3s ease-in-out;
+}
+
+.logo-width {
+  width: 180px;
+}
+
+.texting {
+  font-size: clamp(1.5rem, 2.5vw, 1.8rem) !important;
+}
+
+.img-contain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.both-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 1.8rem;
+  color: rgb(240, 98, 98);
+  z-index: 4;
+  cursor: pointer;
+}
+
+.right-arrow {
+  right: 0px;
+}
+
+.left-arrow {
+  left: 0px;
+}
+
+.footer {
+  min-height: calc(100vh - 50px);
+}
+
+input {
+  width: 100%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  font-size: 1em;
+}
+
+@media (min-width: 992px) {
+  .logo-width {
+    width: 25%;
+  }
+  .img-contain {
+    width: 750px;
+    height: 500px;
+  }
+
+  .right-arrow {
+    right: -100px;
+  }
+
+  .left-arrow {
+    left: -100px;
+  }
+
+  .both-arrow {
+    font-size: 3rem;
+  }
+
+  .resizeA {
+    width: 400px;
+  }
+
+  .resize {
+    width: 350px;
+  }
+
+  .hover-me {
+    opacity: 0;
+  }
+  .hover-me:hover {
+    opacity: 1;
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+  }
+}
